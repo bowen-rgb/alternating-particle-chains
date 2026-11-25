@@ -41,4 +41,9 @@ python3 code/verify_chains.py
 
 The script compares direct and Fourier energy sums for both cells, checks four sample displacements, and evaluates the exponential bound on a six-site cell. 脚本用实空间和傅里叶空间两种算法核对上表，再检查四组位移，并在一个六粒子周期上检验指数势的能量界。[Verification code / 验证脚本](code/verify_chains.py)
 
+## Relation to the necessary condition (Prop. 2.9) / 与必要条件（命题 2.9）的关系
+
+[BKN] also state a necessary condition for high-density crystallization — Proposition 2.9 in [arXiv:1804.05743v3](https://arxiv.org/abs/1804.05743v3), not cited in the manuscript. For the sign pattern of Conjecture 2.7, $\mathcal{F}=(-f,-f,f)$, its left-hand side is $\widehat f(k)+\tfrac12\bigl(-\widehat f(k)-\widehat f(k)\bigr)=0$ for every $k$: the condition holds as an equality and carries no information for this class. The counterexample below neither contradicts Proposition 2.9 nor could have been detected through it. Details and caveats: [notes/prop-2.9-degeneracy.md](notes/prop-2.9-degeneracy.md).
+中文：原文另有一条高密度结晶的必要条件（[arXiv:1804.05743v3](https://arxiv.org/abs/1804.05743v3) 命题 2.9，手稿未引用）。在猜想 2.7 所用的符号型 $\mathcal{F}=(-f,-f,f)$ 下，该式左端恒等于零，因而在此类势上不提供信息；反例既与它不矛盾，也不是它能筛出来的。详见 [notes/prop-2.9-degeneracy.md](notes/prop-2.9-degeneracy.md)。
+
 Questions and corrections are welcome through this repository’s Issues tab. 欢迎在本仓库的 Issues 中提出问题或勘误。
