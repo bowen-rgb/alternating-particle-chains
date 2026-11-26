@@ -2,6 +2,8 @@
 
 This contributed note uses the signed chain and pair-counting convention of the [main manuscript](../en/paper.tex). It extends the four-site example by allowing arbitrary even periods. The derivations and verification program were prepared with OpenAI Codex. [Full Chinese manuscript and figure](https://github.com/gamehhh7/alternating-chain-stability/blob/3a7012e285a7482a9caadc5130cc21bbe8057172/paper-zh.md).
 
+Two other contributions to this repository bear on the comparison. [PR #1](https://github.com/xiujiang4/alternating-particle-chains/pull/1) studies the Gaussian infimum at fixed cell size in a specified width range and the cost of a minimum gap. [PR #3](https://github.com/xiujiang4/alternating-particle-chains/pull/3) studies long-wave mode selection for the exponential-power family as the exponent approaches one from above. The all-mode threshold computed below concerns the Gaussian exponent exactly equal to two. Both problems use the second variation of the alternating chain.
+
 ## Which exponents give equal spacing at every density?
 
 Let $h$ be the mean spacing. For $f_\alpha(r)=e^{-|r|^\alpha}$, $\alpha>0$, equal spacing uniquely minimizes energy up to translation **at every density and every even period if and only if $0<\alpha\le1$**. The positive direction also follows from the exponential-mixture theorem in the main manuscript. For $\alpha>1$, at each sufficiently high density there is a strictly ordered competitor of some finite even period.
