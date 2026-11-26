@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<title>交替粒子链最先失稳的波长</title>
+<style>
+@page{size:A4;margin:0}*{box-sizing:border-box}body{margin:0;background:#edf1f2;color:#172a32;font:11pt/1.70 "Microsoft YaHei",sans-serif}.page{width:210mm;min-height:297mm;margin:7mm auto;background:white;padding:16mm 19mm 20mm;position:relative;break-after:page}.page:last-child{break-after:auto}
+header,footer{font-size:9pt;color:#3e6768}header{border-bottom:1px solid #a7bebe;padding-bottom:2.5mm;margin-bottom:7mm}footer{position:absolute;bottom:10mm;left:19mm;right:19mm;border-top:1px solid #bed0cf;padding-top:2mm;display:flex;justify-content:space-between}
+h1{font-size:22pt;line-height:1.4;margin:0 0 3mm}h2{font-size:17pt;margin:0 0 4mm}h3{font-size:12pt;color:#21595b;margin:4mm 0 1mm}p{margin:2mm 0}.m,.eq{font-family:"Cambria Math",Cambria,serif}.eq{font-size:13pt;text-align:center;margin:3mm 0;line-height:1.65}.m{font-size:1.06em}.claim{border-left:3px solid #367472;background:#eff6f4;padding:2.5mm 4mm;margin:4mm 0}.small{font-size:9.3pt;color:#465d64}.tight{font-size:10.4pt}sup,sub{line-height:0}a{color:#175958}
+table{width:100%;border-collapse:collapse;font-size:10.3pt}th,td{padding:1.6mm 1.8mm;text-align:right;border-bottom:1px solid #d3dfdd}th{background:#eef4f4;color:#235559}td{font-family:Cambria,serif}th:first-child,td:first-child{text-align:left}
+@media print{body{background:white}.page{height:297mm;min-height:0;margin:0}*{print-color-adjust:exact}}
+</style>
+<section class="page"><header>数学物理研究短稿　·　2026 年 11 月 26 日</header>
+<h1>交替粒子链最先失稳的波长</h1>
+<p>广义指数势接近普通指数势时的临界间距</p>
+<h3>问题</h3>
+<p>一条直线上，两类粒子严格交替，同类相吸，异类相斥，势的大小为 <span class="m">f(r)=exp(−r<sup>p</sup>)</span>，相互作用长度取作 1。粒子均匀排列，平均间距为 <span class="m">a</span>。从低密度开始压缩，在所有保持顺序的周期性纵向微扰中，什么波长最先能降低能量的二次项？本文只考察 <span class="m">p=1+δ</span> 且 <span class="m">δ↓0</span> 的情形。</p>
+<div class="claim"><b>主结论.</b> 允许任意偶数周期时，首次线性失稳来自长波极限。其临界间距与密度满足
+<div class="eq">a<sub>*</sub> / √(2δ) → 1,　　 ρ<sub>*</sub> √(2δ) → 1.</div>
+在临界点，任一固定的非零格点波数都仍有正的二次能量。周期越长，越能逼近最先失稳的方向。</div>
+<h3>稳定性的定义</h3>
+<p>令 <span class="m">q</span> 为格点波数。偶数周期 <span class="m">N</span> 的非平移模式取 <span class="m">q=2πj/N</span>，按对称性只需 <span class="m">1≤j≤N/2</span>。离散傅里叶模式使等距排列的二次型对角化。省略正因子，各项的符号取决于</p>
+<div class="eq">D(q) = ∑<sub>m≥1</sub> (−1)<sup>m+1</sup> f″(ma) [1−cos(mq)].</div>
+<p>这是 Bétermin、Knüpfer 与 Nolte 式 (3.4) 在本符号约定下的形式。定义 <span class="m">B(q)=D(q)/(1−cos q)</span>，并以连续延拓定义 <span class="m">B(0)=∑(−1)<sup>m+1</sup>m² f″(ma)</span>。这个值测量波长趋于无穷时的弹性响应。严格取 <span class="m">q=0</span> 的位移是平移，能量始终相同。</p>
+<p>将 <span class="m">a<sub>*</sub></span> 定义为存在负二次能量模式的间距集合的上确界，从稀到密对应 <span class="m">a</span> 从大到小。任意偶数周期的允许波数在 <span class="m">[0,π]</span> 中稠密，故连续波数的严格负值总能在某个有限周期上实现。本文的判据只涉及等距排列附近。非均匀构型有可能在此之前已取得较低的全局能量。</p>
+<footer><span>问题与结论</span><span>1 / 5</span></footer></section>
+<section class="page"><header>交替粒子链最先失稳的波长</header><h2>临界尺度上的频谱</h2>
+<p>设 <span class="m">b=δ/a²</span>、<span class="m">c=cos(q/2)</span>。当 <span class="m">a↓0</span> 且 <span class="m">b</span> 有界时，归一化曲率满足</p>
+<div class="claim"><div class="eq">B(q)/a = F<sub>b</sub>(q)+o(1),　 F<sub>b</sub>(q) = 1/(8c²) + b log(c)/(1−cos q).　(1)</div></div>
+<p>对每个 <span class="m">η&gt;0</span>，式 (1) 在 <span class="m">[0,π−η]</span> 上连同前两阶导数一致成立。原点处取连续值。在另一端，当 <span class="m">a→0</span> 且 <span class="m">q→π</span> 时，<span class="m">B(q)/a→+∞</span>。这两种控制合起来覆盖全部波长。</p>
+<h3>把能逐项相加的部分提出来</h3>
+<p>写 <span class="m">f″(r)=e<sup>−r</sup>−δe<sup>−r</sup>/r+R(r)</span>，令 <span class="m">z=e<sup>−a</sup></span>、<span class="m">V=1+2z cos q+z²</span>。以刚才两项代替 <span class="m">f″</span> 所得的 <span class="m">B</span> 记为 <span class="m">B₀</span>。用几何级数和对数级数，直接得到</p>
+<div class="eq">B₀(q)/a = z(1−z)/[a(1+z)V]<br> + b log[V/(1+z)²]/[2(1−cos q)].　(2)</div>
+<p>例如，第二项来自 <span class="m">∑(−1)<sup>m+1</sup>z<sup>m</sup>(1−cos mq)/m = log(1+z)−(log V)/2</span>。当 <span class="m">q</span> 远离 <span class="m">π</span> 时，<span class="m">V→4c²</span>。式 (2) 及其导数在原点的商都有可去奇点，由此得到式 (1) 的两项。</p>
+<h3>为什么要保留两项</h3>
+<p>指数核的贡献在一般波数下为 <span class="m">O(a)</span>。当 <span class="m">δ&gt;0</span>，二阶导数在小间距还多出近似 <span class="m">−δ/r</span> 的项，其交错和为 <span class="m">O(δ/a)</span>。两者在 <span class="m">a²</span> 与 <span class="m">δ</span> 同阶时竞争。这给出平方根尺度。要确定系数以及最先失稳的波数，还需证明余项在整个波段都不会改变结论。</p>
+<footer><span>临界尺度</span><span>2 / 5</span></footer></section>
+<section class="page tight"><header>交替粒子链最先失稳的波长</header><h2>余项在波数上的一致控制</h2>
+<p>以下固定 <span class="m">0≤δ≤C a²</span>。写 <span class="m">L(r)=1+|log r|</span>。对 <span class="m">0&lt;r≤1</span> 及 <span class="m">0≤j≤6</span>，有常数 <span class="m">Cⱼ,K</span> 使</p>
+<div class="eq">|R<sup>(j)</sup>(r)| ≤ Cⱼ L(r)<sup>K</sup> [δ r<sup>−j</sup> + δ² r<sup>−1−j</sup>].　(3)</div>
+<p>为验证 (3)，将精确导数写为 <span class="m">p²r<sup>2δ</sup> exp(−r<sup>p</sup>)−δp r<sup>δ−1</sup> exp(−r<sup>p</sup>)</span>。第一项减去 <span class="m">e<sup>−r</sup></span> 在 <span class="m">δ=0</span> 为零。将第二项和补偿项合并成 <span class="m">−(δ/r)[p r<sup>δ</sup> exp(−r<sup>p</sup>)−e<sup>−r</sup>]</span>，方括号也在 <span class="m">δ=0</span> 为零。对括号和第一项分别用参数中值公式，作 <span class="m">j</span> 次空间求导，每次至多增加一个 <span class="m">r<sup>−1</sup></span>，参数微分至多引入对数。对 <span class="m">r≥1</span>，相同计算给出 <span class="m">Cⱼδ(1+r)<sup>K</sup> e<sup>−r/2</sup></span> 的界。</p>
+<h3>远离格点波数 π</h3>
+<p>对 <span class="m">0≤l≤4</span> 设 <span class="m">h(x)=x<sup>l</sup>R(ax)</span>。将级数 <span class="m">∑<sub>m≥1</sub> h(m)e<sup>imθ</sup></span> 作 <span class="m">l+2</span> 次分部求和。当 <span class="m">|1−e<sup>iθ</sup>|</span> 有正下界时，其绝对值由常数乘以下两项之和控制：前 <span class="m">l+2</span> 项的绝对值，以及 <span class="m">∫₁<sup>∞</sup>|h<sup>(l+2)</sup>(x)|dx</span>。这个估计来自将有限差分写成单位区间上导数的积分。</p>
+<p>在 <span class="m">1≤x≤1/a</span> 上，式 (3) 给出导数上界 <span class="m">C L(a)<sup>K</sup>[δx<sup>−2</sup>+(δ²/a)x<sup>−3</sup>]</span>。在 <span class="m">x&gt;1/a</span> 上换元 <span class="m">r=ax</span>，尾积分为 <span class="m">O(δa)</span>。前面有限个初项也受同一总界控制。因此，这些振荡和一致为 <span class="m">O((δ+δ²/a)L(a)<sup>K</sup>)=o(a)</span>。</p>
+<p>对 <span class="m">θ=π, π±q</span> 应用该估计，得到 <span class="m">D−D₀=o(a)</span> 的 <span class="m">C⁴</span> 范数界。该差是偶函数，在原点连同一次导数消失。由带积分余项的泰勒公式，除以 <span class="m">1−cos q</span> 后仍有 <span class="m">C²</span> 范数界 <span class="m">o(a)</span>。</p>
+<h3>靠近格点波数 π</h3>
+<p>由 (3) 直接相加，<span class="m">∑|R(ma)|=O(δ/a+δ²L(a)<sup>K+1</sup>/a)=O(a)</span>。因 <span class="m">1−cos q</span> 远离零，<span class="m">(B−B₀)/a</span> 有界。式 (2) 中当 <span class="m">V→0</span> 时，第一项以正的常数乘 <span class="m">1/V</span> 发散，负项至多按 <span class="m">|log V|</span> 增长。这证明第 2 页的端点断言。</p>
+<footer><span>一致估计</span><span>3 / 5</span></footer></section>
+<section class="page tight"><header>交替粒子链最先失稳的波长</header><h2>从频谱确定首次失稳</h2>
+<p>在 <span class="m">q=0</span> 处，<span class="m">F<sub>b</sub>(0)=1/8−b/4</span>，在 <span class="m">b=1/2</span> 时取零。对 <span class="m">0&lt;q&lt;π</span> 令 <span class="m">x=cos²(q/2)</span>。此时</p>
+<div class="eq">F<sub>1/2</sub>(q) = (1−x+x log x)/[8x(1−x)] &gt; 0.</div>
+<p>分子在 <span class="m">x=1</span> 取零，导数为 <span class="m">log x&lt;0</span>。原点附近的展开为 <span class="m">F<sub>b</sub>(q)=1/8−b/4+(1−b)q²/32+O(q⁴)</span>。因而当 <span class="m">b</span> 接近 <span class="m">1/2</span> 时，原点附近的二阶导数有正下界。由式 (1) 的 <span class="m">C²</span> 收敛和偶对称性，真实 <span class="m">B(q)</span> 在这段区间内严格随 <span class="m">q&gt;0</span> 上升。其余紧区间在临界比值处与 <span class="m">F<sub>1/2</sub>(0)</span> 有正间隔，靠近 <span class="m">π</span> 的波段已在第 3 页排除。因此在 <span class="m">|b−1/2|</span> 和 <span class="m">a</span> 都充分小时，<span class="m">B</span> 严格在原点取得最小值。</p>
+<h3>排除从稀相一侧更早出现的失稳</h3>
+<p>对 <span class="m">b≤1/2−ε</span>，式 (1) 给出严格正的下界。这是因为 <span class="m">F<sub>b</sub></span> 随 <span class="m">b</span> 减小而上升，且 <span class="m">q=0</span> 已有正裕度。对 <span class="m">b=1/2+ε</span>，则有 <span class="m">B(0)&lt;0</span>，连续性给出非零波数的负值。这里 <span class="m">ε&gt;0</span> 任意充分小。</p>
+<p>对于远离零的紧间距区间，<span class="m">δ→0</span> 时 <span class="m">B</span> 一致趋于正的指数核表达式（式 (2) 第一项乘以 <span class="m">a</span>）。一致性来自指数尾和 <span class="m">(1−cos mq)/(1−cos q)≤m²</span>。对于所有充分大的 <span class="m">a</span>，<span class="m">f″(a)&gt;0</span>，并有 <span class="m">|f″(ma)|/f″(a)≤2m<sup>2δ</sup> exp(−(m−1)a)</span>。于是最近邻项大于其余各项乘 <span class="m">m²</span> 后的绝对值之和。这排除了稀相一侧的其他失稳区间。</p>
+<p>以上夹逼给出 <span class="m">δ/a<sub>*</sub>²→1/2</span>。稳定边界的连续性和此处的严格极小性给出 <span class="m">B(0)=0</span>。从不稳定侧逼近边界，出现负能量的波数必趋向零。</p>
+<h3>固定偶数周期</h3>
+<p>对固定的 <span class="m">N≥4</span>，令 <span class="m">q₁=2π/N</span>、<span class="m">x₁=cos²(π/N)</span>。非零波数的首个变号比值为 <span class="m">b(q)=(1−x)/(−2x log x)</span>，它随 <span class="m">q</span> 严格增加（微分后由 <span class="m">log x&lt;x−1</span> 得到）。故 <span class="m">δ</span> 充分小时首个模式为 <span class="m">j=1</span> 及其共轭，临界间距满足</p>
+<div class="eq">a<sub>*,N</sub>² / δ → −2x₁ log(x₁)/(1−x₁).</div>
+<p>此论证逐个固定 <span class="m">N</span> 取极限。<span class="m">N=2</span> 只有端点波数 <span class="m">π</span>，不在该有限周期公式的范围内。</p>
+<footer><span>临界间距与有限周期</span><span>4 / 5</span></footer></section>
+<section class="page"><header>交替粒子链最先失稳的波长</header><h2>数值复核与适用范围</h2>
+<p>第二列给出长波弹性系数 <span class="m">B(0)</span> 变号处的数值根。最后三列按相同的 <span class="m">δ</span>，在指定有限周期的全部非零模式中寻找最小的 <span class="m">B(q)</span> 并求根。每组临界点上的有限周期最小值都由 <span class="m">j=1</span> 达到。</p>
+<table><thead><tr><th>δ = p−1</th><th>长波根</th><th>根 / √(2δ)</th><th>N = 4</th><th>N = 16</th><th>N = 128</th></tr></thead><tbody>
+<tr><td>0.1</td><td>0.606969</td><td>1.3572</td><td>0.499669</td><td>0.600729</td><td>0.606872</td></tr><tr><td>0.03</td><td>0.301954</td><td>1.2327</td><td>0.249959</td><td>0.298942</td><td>0.301907</td></tr><tr><td>0.01</td><td>0.160637</td><td>1.1359</td><td>0.133325</td><td>0.159056</td><td>0.160612</td></tr><tr><td>0.003</td><td>0.083088</td><td>1.0727</td><td>0.069063</td><td>0.082277</td><td>0.083075</td></tr><tr><td>0.001</td><td>0.046551</td><td>1.0409</td><td>0.038720</td><td>0.046098</td><td>0.046544</td></tr><tr><td>0.0001</td><td>0.014318</td><td>1.0124</td><td>0.011917</td><td>0.014179</td><td>0.014316</td></tr></tbody></table>
+<h3>如何复算</h3>
+<p>使用装有 NumPy 的 Python 运行 <code>python verify_first_mode.py</code>。脚本计算周期傅里叶和，长波端另用平方正弦比直接求和以减小相消误差。它改变截断长度并以 38 位十进制算术检查长波根的残差。此外，在 512 粒子的周期中独立扫描间距和波数。表中数值经过舍入，近似式的误差随 <span class="m">δ</span> 减小而缩小。</p>
+<h3>物理波数与格点波数</h3>
+<p>取 <span class="m">0≤ka≤π</span>。普通位移 <span class="m">u<sub>j</sub>=cos(kaj)</span> 的格点波数为 <span class="m">q=ka</span>，这也是 Bétermin 等在式 (3.5) 后采用的取法。交错位移 <span class="m">u<sub>j</sub>=(−1)<sup>j</sup>cos(kaj)</span> 的格点波数折回 <span class="m">[0,π]</span> 后为 <span class="m">q=π−ka</span>。固定物理波数 <span class="m">k</span> 并令 <span class="m">a→0</span>，两者分别趋于频谱的两端。本文比较所有允许的波数，得到首先失稳的长波分支 <span class="m">q→0</span>。</p>
+<h3>相关文献与稿件状态</h3>
+<p class="small">L. Bétermin, H. Knüpfer 和 F. Nolte，<i>Note on Crystallization for Alternating Particle Chains</i> (2020)，§3.5，式 (3.4)。本文使用其离散二次变分。<a href="https://doi.org/10.1007/s10955-020-02603-2">期刊原文</a></p>
+<p class="small"><i>A Gaussian counterexample and a Riesz bound for alternating particle chains</i> (2026)，研究手稿。该稿给出高斯势反例与一条具体的降能方向。<a href="https://github.com/xiujiang4/alternating-particle-chains">手稿与代码</a></p>
+<p class="small">本文是 AI 辅助推导的工作稿。截至 2026 年 11 月 26 日，在已查公开资料中尚未定位同一模型的首模渐近式。结果的优先权、一致估计和临界选择论证仍待独立审阅。</p>
+<footer><span>复现与文献</span><span>5 / 5</span></footer></section></html>
