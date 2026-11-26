@@ -47,4 +47,10 @@ A contributed [stability note](notes/chain-stability.md) derives the all-density
 
 这份附注研究哪些指数保证等距排列在所有密度下都最优，并给出高斯链局部稳定、却有更低能排列的参数区间。[中文推导](https://github.com/gamehhh7/alternating-chain-stability/blob/3a7012e285a7482a9caadc5130cc21bbe8057172/paper-zh.md)
 
+## Relation to BKN Proposition 2.9 / 与 BKN 命题 2.9 的关系
+
+For potentials satisfying the hypotheses of Proposition 2.9, the sign pattern $\mathcal F=(-f,-f,f)$ makes its Fourier expression zero at every frequency. The Gaussian in the four-site counterexample satisfies these hypotheses. [Derivation and scope](notes/prop-2.9-degeneracy.md) · [Original proposition](https://doi.org/10.1007/s10955-020-02603-2)
+
+对满足命题 2.9 假设的势，符号组合 $\mathcal F=(-f,-f,f)$ 使其傅里叶表达式在每个波数处都等于零。四粒子反例中的高斯势满足这些假设。
+
 Questions and corrections are welcome through this repository’s Issues tab. 欢迎在本仓库的 Issues 中提出问题或勘误。
