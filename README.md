@@ -42,3 +42,7 @@ python3 code/verify_chains.py
 The script compares direct and Fourier energy sums for both cells, checks four sample displacements, and evaluates the exponential bound on a six-site cell. 脚本用实空间和傅里叶空间两种算法核对上表，再检查四组位移，并在一个六粒子周期上检验指数势的能量界。[Verification code / 验证脚本](code/verify_chains.py)
 
 Questions and corrections are welcome through this repository’s Issues tab. 欢迎在本仓库的 Issues 中提出问题或勘误。
+
+## Dilute Gaussian chains / 低密度交替高斯链
+
+For the Gaussian interaction, equal spacing uniquely minimizes the energy whenever the dimensionless squared mean spacing satisfies $ah^2\ge4$, for every even period and without an imposed minimum gap. Near minimizers at fixed density converge to uniform spacing in mean absolute gap deviation. [English proof](en/dilute-crystallization.md) · [English PDF](en/dilute-crystallization.pdf) · [中文证明](zh/dilute-crystallization.md) · [中文 PDF](zh/dilute-crystallization.pdf) · [Verification script](code/verify_dilute_crystallization.py)
