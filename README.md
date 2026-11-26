@@ -54,3 +54,7 @@ For potentials satisfying the hypotheses of Proposition 2.9, the sign pattern $\
 对满足命题 2.9 假设的势，符号组合 $\mathcal F=(-f,-f,f)$ 使其傅里叶表达式在每个波数处都等于零。四粒子反例中的高斯势满足这些假设。
 
 Questions and corrections are welcome through this repository’s Issues tab. 欢迎在本仓库的 Issues 中提出问题或勘误。
+
+## Dilute Gaussian chains / 低密度交替高斯链
+
+For the Gaussian interaction, equal spacing uniquely minimizes the energy whenever the dimensionless squared mean spacing satisfies $ah^2\ge4$, for every even period and without an imposed minimum gap. Near minimizers at fixed density converge to uniform spacing in mean absolute gap deviation. [English proof](en/dilute-crystallization.md) · [English PDF](en/dilute-crystallization.pdf) · [中文证明](zh/dilute-crystallization.md) · [中文 PDF](zh/dilute-crystallization.pdf) · [Verification script](code/verify_dilute_crystallization.py)
