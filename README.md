@@ -41,4 +41,10 @@ python3 code/verify_chains.py
 
 The script compares direct and Fourier energy sums for both cells, checks four sample displacements, and evaluates the exponential bound on a six-site cell. 脚本用实空间和傅里叶空间两种算法核对上表，再检查四组位移，并在一个六粒子周期上检验指数势的能量界。[Verification code / 验证脚本](code/verify_chains.py)
 
+## Follow-up note / 后续研究
+
+A contributed [stability note](notes/chain-stability.md) derives the all-density exponent boundary for exponential-power potentials and the Gaussian long-wave instability threshold. It includes a six-site comparison at a density where equal spacing is a strict local minimum in every finite cell. [Verification script](code/verify_stability.py)
+
+这份附注研究哪些指数保证等距排列在所有密度下都最优，并给出高斯链局部稳定、却有更低能排列的参数区间。[中文推导](https://github.com/gamehhh7/alternating-chain-stability/blob/3a7012e285a7482a9caadc5130cc21bbe8057172/paper-zh.md)
+
 Questions and corrections are welcome through this repository’s Issues tab. 欢迎在本仓库的 Issues 中提出问题或勘误。
